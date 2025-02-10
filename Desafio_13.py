@@ -6,7 +6,8 @@ def pesquisa_nome():
         nome = input(f'Digite o {i+1}° nome: ')
         lista_nomes.append(nome.lower())
 
-    pesquisa = input('Informe o nome que deseja pesquisar na lista: '.lower())
+    pesquisa = input('Informe o nome que deseja pesquisar na lista: ')
+    pesquisa = pesquisa.lower()
 
     if pesquisa in lista_nomes:
         print('Achei :)')
